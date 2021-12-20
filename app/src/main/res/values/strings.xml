@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Stook</string>
+    <string name="user_name">Name</string>
+    <string name="name_of_user">User Name</string>
+    <string name="name">Hey,</string>
+    <string name="example">example</string>
+    <string name="proceed">Proceed</string>
+    <string name="content_description_dashboard">Background_Image</string>
+    <string name="b_tech">B.Tech</string>
+    <string name="department">Department</string>
+    <string name="year">Year</string>
+    <string name="notifications_txt">NOTIFICATIONS</string>
+    <string name="sign_out_txt">SIGN OUT</string>
+    <string name="refresh_txt">REFRESH</string>
+    <string name="guidelines_txt">Guidelines</string>
+    <string name="sample_guideline"><br>Permanent Guidelines</br>
+        <br>will be shown</br>
+        <br>HERE</br>
+    </string>
+    <string name="contact_us_txt">Contact Us</string>
+    <string name="subject_txt">Subject</string>
+    <string name="message_txt">Message</string>
+    <string name="websites_txt">websites</string>
+    <string-array name="dept">
+        <item>Computer Science</item>
+        <item>Civil</item>
+        <item>Electrical</item>
+        <item>Mechanical</item>
+    </string-array>
+    <string-array name="year">
+        <item>2020</item>
+        <item>2019</item>
+        <item>2018</item>
+        <item>2017</item>
+    </string-array>
+</resources>

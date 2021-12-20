@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Website"
+    android:background="@drawable/website_bg"
+    android:fitsSystemWindows="true"
+    android:scaleType = "fitXY">
+
+    <TextView
+        android:id="@+id/website_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/websites_txt"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:fontFamily="@font/raleway_bold"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:layout_marginTop="10dp"/>
+        <androidx.cardview.widget.CardView
+            android:foreground="?android:attr/selectableItemBackground"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/main_campus"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/ptu_main"
+            app:layout_constraintTop_toBottomOf="@+id/website_heading"
+            android:layout_gravity="fill"
+            app:cardCornerRadius="15dp"
+            android:elevation="50dp"
+            android:layout_margin="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintBottom_toTopOf="@+id/ptu_data">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ptu_main"/>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:foreground="?android:attr/selectableItemBackground"
+            app:layout_constraintStart_toEndOf="@+id/ptu_main"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/website_heading"
+            android:id="@+id/main_campus"
+            android:layout_gravity="fill"
+            app:cardCornerRadius="15dp"
+            android:elevation="50dp"
+            android:layout_margin="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintBottom_toTopOf="@+id/ptu_exam">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/main_campus"/>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:foreground="?android:attr/selectableItemBackground"
+            app:layout_constraintEnd_toStartOf="@+id/ptu_exam"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ptu_main"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/ptu_data"
+            android:layout_gravity="fill"
+            app:cardCornerRadius="15dp"
+            android:elevation="50dp"
+            android:layout_margin="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintBottom_toTopOf="@+id/pre_paper">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ptu_data"/>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:foreground="?android:attr/selectableItemBackground"
+            app:layout_constraintStart_toEndOf="@+id/ptu_data"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/main_campus"
+            android:id="@+id/ptu_exam"
+            android:layout_gravity="fill"
+            app:cardCornerRadius="15dp"
+            android:elevation="50dp"
+            android:layout_margin="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintBottom_toTopOf="@+id/notice_board">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ptu_exams"/>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:foreground="?android:attr/selectableItemBackground"
+            app:layout_constraintEnd_toStartOf="@+id/notice_board"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ptu_data"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/pre_paper"
+            android:layout_gravity="fill"
+            app:cardCornerRadius="15dp"
+            android:elevation="50dp"
+            android:layout_margin="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/pre_year_ppr"/>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:foreground="?android:attr/selectableItemBackground"
+            app:layout_constraintStart_toEndOf="@+id/pre_paper"
+            app:layout_constraintTop_toBottomOf="@+id/ptu_exam"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/notice_board"
+            android:layout_gravity="fill"
+            app:cardCornerRadius="15dp"
+            android:elevation="50dp"
+            android:layout_margin="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/notice_board"/>
+
+        </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

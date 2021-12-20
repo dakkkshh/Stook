@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1039310676316",
+    "project_id": "stook-1617253265283",
+    "storage_bucket": "stook-1617253265283.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1039310676316:android:2c4a837087cbf2becaa199",
+        "android_client_info": {
+          "package_name": "com.ikgptu.stook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1039310676316-3aq29ida48o976ks4em758c07qrv62v2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ikgptu.stook",
+            "certificate_hash": "b3d09f1935e3b9ac4163f4bd3418f65a98c661eb"
+          }
+        },
+        {
+          "client_id": "1039310676316-pdidps0dcjoh618tam2fs81j8i65kggq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiK762vLSr3u5UOLLzxBS9nczuDDmls8w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1039310676316-pdidps0dcjoh618tam2fs81j8i65kggq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

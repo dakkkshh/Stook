@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dashboard_background"
+    android:fitsSystemWindows="true"
+    android:scaleType="fitXY"
+    tools:context=".Dashboard">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="75dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="75dp"
+        android:fontFamily="@font/raleway_bold"
+        android:gravity="start"
+        android:text="@string/name"
+        android:textAlignment="textStart"
+        android:textColor="@color/color2"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/profile_image"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name_text"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:fontFamily="@font/raleway_semibold"
+        android:gravity="start"
+        android:text="@string/example"
+        android:textAlignment="textStart"
+        android:textColor="@color/color2"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/profile_image"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintVertical_bias="0.01" />
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_hello"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/hello" />
+
+    <Button
+        android:id="@+id/proceed_dashboard"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/raleway_semibold"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="@string/proceed"
+        android:textColor="@color/color2"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_image"
+        app:layout_constraintVertical_bias="0.95" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
